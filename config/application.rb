@@ -33,3 +33,5 @@ module Filmi
     config.generators.system_tests = nil
   end
 end
+
+Rails.application.config.assets.unknown_asset_fallback = true #左記を記述でimage_tagのエラーを回避
