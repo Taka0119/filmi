@@ -1,0 +1,77 @@
+.shared_sign_up {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: calc(100% - 100px);
+  &__box {
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    display: flex;
+    &__inner {
+      margin: 0 auto;
+      width: 600px;
+      &--title {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &__form {
+        background-color: #ffffff;
+        padding: 30px 30px;
+        border-radius: 10px;
+        &__field {
+          margin-bottom: 40px;
+          display: flex;
+          justify-content: space-between;
+          line-height: 35px;
+          font-size: 15px;
+          &__new_name {
+            width: 50%;
+            height: 35px;
+            padding: 0 10px;
+            border: 3px solid #dfdfdf;
+            border-radius: 2px;
+          }
+          &__new_email {
+            width: 50%;
+            height: 35px;
+            padding: 0 10px;
+            border: 3px solid #dfdfdf;
+            border-radius: 2px;
+          }
+          &__new_password {
+            width: 50%;
+            height: 35px;
+            padding: 0 10px;
+            border: 3px solid #dfdfdf;
+            border-radius: 2px;
+          }
+        }
+        &--submit {
+          background-color: #007bff;
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+          color: #ffffff;
+          font-weight: bold;
+          height: 40px;
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+        &--submit:hover {
+          background-color: #007bffc7;
+        }
+        &__under_nav {
+          margin-top: 10px;
+          &--login {
+            margin-left: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sign_up_line {
+  border: 1px solid #f2f2f2;
+  margin: 0;
+}

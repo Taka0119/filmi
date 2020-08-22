@@ -11,28 +11,12 @@
             - if devise_mapping.rememberable?
               = f.check_box :ログイン情報を保存
               = f.label :ログイン情報を保存
-          = link_to "パスワードをお忘れの方", new_password_path(resource_name), class: 'shared_login__box__inner__form__field__new_password'
+          = link_to "パスワードをお忘れの方", new_password_path(resource_name), class: 'shared_login__box__inner__form__field__forget_password'
         = f.submit "ログイン", class: 'shared_login__box__inner__form--submit'
       
         .shared_login__box__inner__form__under_nav
           .shared_login__box__inner__form__under_nav--sign_up
             アカウントをお持ちでない方はこちら
             = link_to "新規登録", new_registration_path(resource_name)
-      .shared_login__box__inner--text
-        または
-      .shared_login__box__inner__login_sns
-        .shared_login__box__inner__login_sns--title 
-          他のアカウントでかんたんにログイン
-        %ul.shared_login__box__inner__login_sns__ul
-          %li.shared_login__box__inner__login_sns__ul__li
-            = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--twitter' do
-              = icon('fab', 'twitter', class: 'sns_login_icon')
-              Twitter
-          %li.shared_login__box__inner__login_sns__ul__li
-            = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--google' do
-              = image_tag 'filmi_素材/Google_icon.png', class: 'sns_login_icon'
-              Google
-          %li.shared_login__box__inner__login_sns__ul__li
-            = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--apple' do
-              = icon('fab', 'apple', class: "sns_login_icon")
-              Apple
+            
+      = render 'users/shared/sns_login'

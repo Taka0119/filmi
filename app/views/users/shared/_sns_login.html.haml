@@ -1,0 +1,18 @@
+.shared_login__box__inner--text
+  または
+.shared_login__box__inner__login_sns
+  .shared_login__box__inner__login_sns--title 
+    他のアカウントでかんたんにログイン
+  %ul.shared_login__box__inner__login_sns__ul
+    %li.shared_login__box__inner__login_sns__ul__li
+      = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--twitter' do
+        = icon('fab', 'twitter', class: 'sns_login_icon')
+        Twitter
+    %li.shared_login__box__inner__login_sns__ul__li
+      = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--google' do
+        = image_tag 'filmi_素材/Google_icon.png', class: 'sns_login_icon'
+        Google
+    %li.shared_login__box__inner__login_sns__ul__li
+      = link_to '#', class: 'shared_login__box__inner__login_sns__ul__li--apple' do
+        = icon('fab', 'apple', class: "sns_login_icon")
+        Apple
