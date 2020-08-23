@@ -31,6 +31,13 @@ module Filmi
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.test_framework :rspec, 
+            view_specs: false, #viewファイルのrspec作成しない
+            helper_specs: false, 
+            routing_specs: false #routes.rbのrspecを作成しない
+    end
   end
 end
 
