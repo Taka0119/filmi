@@ -9,4 +9,10 @@ class User < ApplicationRecord
                                                                        # case_sensitiveオプションは、trueだと大文字小文字を区別する。しかし、DB側のcollationに変更がなければ、問題がある。
                                                                        # falseだと大文字小文字を区別しなくなる。しかし、大文字小文字は同じに扱われるため問題がある。
   validates :password, null: false
+
+  def self.guest
+    find_or_create_by!(email: 'guest@exapmle.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+    end
+  end
 end
