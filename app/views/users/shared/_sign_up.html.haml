@@ -1,0 +1,26 @@
+.shared_sign_up 
+  .shared_sign_up__box
+    .shared_sign_up__box__inner
+      %h2.shared_sign_up__box__inner--title Filmiアカウントの作成
+
+      = render 'users/shared/sns_sign_up'
+      
+      = form_with(model: @user, url: user_registration_path, local: true, class: 'shared_sign_up__box__inner__form') do |f|
+        = render "users/shared/error_messages", resource: resource
+        .shared_sign_up__box__inner__form__field
+          お名前
+          = f.text_field :name,  autocomplete: 'name', class: 'shared_sign_up__box__inner__form__field__new_name'
+        .shared_sign_up__box__inner__form__field
+          メールアドレス
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'shared_sign_up__box__inner__form__field__new_email'
+        .shared_sign_up__box__inner__form__field
+          パスワード
+          = f.password_field :password, autocomplete: "new-password", placeholder: @minimum_password_length.to_s + '文字以上入力してください', class: 'shared_sign_up__box__inner__form__field__new_password'
+        .shared_sign_up__box__inner__form__field
+          パスワードを再入力
+          = f.password_field :password_confirmation, autocomplete: "new-password", class: 'shared_sign_up__box__inner__form__field__new_password'
+        %hr.sign_up_line
+        = f.submit '新規登録', class: 'shared_sign_up__box__inner__form--submit'
+        .shared_sign_up__box__inner__form__under_nav
+          = link_to user_session_path, class: 'shared_sign_up__box__inner__form__under_nav--login' do
+            アカウントをお持ちの方

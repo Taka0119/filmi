@@ -1,0 +1,13 @@
+.shares_footer {
+  height: 50px;
+  background-color: #c6a765;
+  display: flex;
+  &__box {
+    margin: 0 auto;
+    line-height: 50px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+}

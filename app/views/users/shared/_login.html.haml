@@ -1,0 +1,22 @@
+.shared_login
+  .shared_login__box
+    .shared_login__box__inner
+      %h2.shared_login__box__inner--title Filmiアカウント
+      = form_with(model: @user, url: user_session_path, local: true, class: 'shared_login__box__inner__form') do |f|
+        .shared_login__box__inner__form__field
+          = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'メールアドレス', class: 'shared_login__box__inner__form__field__email'
+        .shared_login__box__inner__form__field
+          = f.password_field :password, autocomplete: "current-password", placeholder: 'パスワード', class: 'shared_login__box__inner__form__field__password'
+          .shared_login__box__inner__form__field__save
+            - if devise_mapping.rememberable?
+              = f.check_box :ログイン情報を保存
+              = f.label :ログイン情報を保存
+          = link_to "パスワードをお忘れの方", new_password_path(resource_name), class: 'shared_login__box__inner__form__field__forget_password'
+        = f.submit "ログイン", class: 'shared_login__box__inner__form--submit'
+      
+        .shared_login__box__inner__form__under_nav
+          .shared_login__box__inner__form__under_nav--sign_up
+            アカウントをお持ちでない方はこちら
+            = link_to "新規登録", new_registration_path(resource_name)
+            
+      = render 'users/shared/sns_login'
