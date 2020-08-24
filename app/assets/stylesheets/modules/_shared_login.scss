@@ -56,8 +56,32 @@
         &--submit:hover {
           background-color: #007bffc7;
         }
+        // ゲストログイン用 
+        // -------------------------------------------
+        &--guest_submit {
+          background-color: rgb(156, 235, 0);
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+          color: #ffffff;
+          font-weight: bold;
+          height: 40px;
+          width: 200px;
+          display: block;
+          margin: 10px auto 0;
+          line-height: 40px;
+          text-align: center;
+        }
+        &--guest_submit:hover {
+          background-color: rgba(156, 235, 0, 0.8);
+          text-decoration: none;
+          color: #ffffff;
+        }
+        // -------------------------------------------
         &__under_nav {
           margin-top: 10px;
+          &--sign_up {
+            text-align: center;
+          }
         }
       }
       &--text {

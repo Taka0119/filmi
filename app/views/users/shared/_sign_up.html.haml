@@ -21,6 +21,9 @@
           = f.password_field :password_confirmation, autocomplete: "new-password", class: 'shared_sign_up__box__inner__form__field__new_password'
         %hr.sign_up_line
         = f.submit '新規登録', class: 'shared_sign_up__box__inner__form--submit'
+        -# ゲストログイン用
+        = link_to users_guest_sign_in_path, method: :post, class: 'shared_sign_up__box__inner__form--guest_submit' do
+          ゲストログイン
         .shared_sign_up__box__inner__form__under_nav
           = link_to user_session_path, class: 'shared_sign_up__box__inner__form__under_nav--login' do
             アカウントをお持ちの方
