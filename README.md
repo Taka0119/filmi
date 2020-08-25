@@ -1,24 +1,16 @@
-# README
+# Filmi(フィルミ)
+「オススメの映画・ドラマなどの映像作品をみんなで共有・発見する」を目的としたレビューサイト
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 構成
+・　インフラ
 
-Things you may want to cover:
+・　バックエンド
+  ◦ ruby 2.5.1
+  ◦ rails 6.0.3
 
-* Ruby version
+・  フロントエンド
+  ◦ HTML, CSS, Javascript/jquery
 
-* System dependencies
+## クラウドアーキテクチャ
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 機能一覧
