@@ -1,7 +1,8 @@
-%h1 こんにちは
+- if user_signed_in?
+  = render 'shares/user_header'
+- else 
+  = render 'shares/header'
 
-= link_to new_user_registration_path do
-  会員登録へ
+  = render 'main'
 
-= link_to destroy_user_session_path do
-  ログアウト
+= render 'shares/footer'
