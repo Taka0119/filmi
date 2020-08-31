@@ -1,18 +1,9 @@
-.shares_header {
-  height: 70px;
-  line-height: 70px;
-  background-color: #c6a765;
-  &__box {
-    margin: 0 20px;
-  }
-}
-
 .header_logo_icon {
   height: 40px;
 }
 
 .root_path {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
@@ -21,4 +12,83 @@
 .root_path:hover {
   text-decoration: none;
   color: #ffffff70;
+}
+
+.link {
+  color: #ffffff;
+}
+
+.link:hover {
+  color: #ffffffc7;
+  text-decoration: none;
+}
+
+.shares_header {
+  height: 70px;
+  line-height: 70px;
+  background-color: #c6a765;
+  &__box {
+    margin: 0 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      &__movie {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__tv {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__schedule {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__performer {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__sign_up {
+        list-style: none;
+      }
+      &__sign_up:hover {
+        text-decoration: none;
+      }
+      &__login {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__login:hover {
+        text-decoration: none;
+      }
+      &__search {
+        list-style: none;
+        margin-left: 40px;
+      }
+      // ログイン中 + α
+      &__new {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__my_page {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__notification {
+        list-style: none;
+        margin-left: 40px;
+      }
+      &__logout {
+        list-style: none;
+        margin-left: 40px;
+      }
+    }
+  }
 }
