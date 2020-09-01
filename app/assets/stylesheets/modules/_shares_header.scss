@@ -3,9 +3,9 @@
 }
 
 .root_path {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lobster', cursive;
   text-decoration: none;
   color: #ffffff;
 }
@@ -25,8 +25,10 @@
 
 .shares_header {
   height: 70px;
+  width: 100%;
   line-height: 70px;
-  background-color: #c6a765;
+  background-color: rgba($color: #c6a765, $alpha: 0.7);
+  position: fixed;
   &__box {
     margin: 0 50px;
     height: 100%;
@@ -41,53 +43,46 @@
       color: #ffffff;
       &__movie {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__tv {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__schedule {
         list-style: none;
-        margin-left: 40px;
-      }
-      &__performer {
-        list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__sign_up {
         list-style: none;
+        margin-left: 20px;
       }
       &__sign_up:hover {
         text-decoration: none;
       }
       &__login {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__login:hover {
         text-decoration: none;
       }
       &__search {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       // ログイン中 + α
       &__new {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__my_page {
         list-style: none;
-        margin-left: 40px;
-      }
-      &__notification {
-        list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
       &__logout {
         list-style: none;
-        margin-left: 40px;
+        margin-left: 20px;
       }
     }
   }

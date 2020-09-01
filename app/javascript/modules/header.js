@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   function textAdd() {
-    let block = document.getElementById('nav')
+    let block = document.getElementById('menu_movie')
     insetElement = document.createElement('li');
 
-    insetElement.textContent = 'TEST :' 'aaaa :';
+    insetElement.textContent = 'TEST :';
     block.insertAdjacentElement('afterbegin', insetElement)
   }
 
-  document.getElementById('nav').addEventListener('click', textAdd)
+  document.getElementById('menu_movie').addEventListener('click', textAdd)
+
+  let window = document.defaultView
+  let header = document.getElementsByClassName('shares_header')[0]
+
 });

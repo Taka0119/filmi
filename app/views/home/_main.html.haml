@@ -1,4 +1,14 @@
 .main_wrapper
+  .main_wrapper__container
+    .main_wrapper__container__inner
+      %h1.main_wrapper__container__inner--title
+        Filmi
+      %p.main_wrapper__container__inner--text
+        あなたの好きな映画、テレビ番組を見つけよう!!
+      .main_wrapper__container__inner__search
+        = form_with do |form|
+          = form.text_field :name, placeholder: '映画名や番組名で検索...', class: 'main_wrapper__container__inner__search--field'
+          = form.submit '検索', class: 'main_wrapper__container__inner__search--btn'
   -# 映画館で上映中の映画
   .movie_slide
     .movie_slide__box

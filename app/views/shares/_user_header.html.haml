@@ -5,23 +5,16 @@
       Filmi
 
     %ul.shares_header__box__menu
-      %li.shares_header__box__menu__movie
+      %li.shares_header__box__menu__movie#menu_movie
         映画
-      %li.shares_header__box__menu__tv
+      %li.shares_header__box__menu__tv#menu_tv
         テレビ番組
-      %li.shares_header__box__menu__schedule
-        番組表
-      %li.shares_header__box__menu__performer
-        出演者
 
       %li.shares_header__box__menu__new
         = icon('fa', 'plus', class: 'shares_header__box__menu__new__list')
 
       %li.shares_header__box__menu__my_page
         = icon('fa', 'user-circle', class: 'shares_header__box__menu__my_page__list')
-
-      %li.shares_header__box__menu__notification
-        = icon('fa', 'bell', class: 'shares_header__box__menu__notification__list')
 
       %li.shares_header__box__menu__logout
         = link_to destroy_user_session_path, class: 'link' do

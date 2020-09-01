@@ -1,6 +1,47 @@
 .main_wrapper {
   background-color: whitesmoke;
   padding-bottom: 50px;
+  &__container {
+    height: 80vh;
+    background: linear-gradient(to top, rgba(141, 141, 141, 0.7) 0%, #c7ab6e8f 100%),url('filmi_素材/home_l.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__inner {
+      &--title {
+        text-align: center;
+        font-size: 80px;
+        font-family: 'Lobster', cursive;
+        color: #ffffff;
+        padding-top: 200px;
+      }
+      &--text {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      &__search {
+        text-align: center;
+        &--field {
+          width: 40%;
+          height: 40px;
+          padding: 0 15px;
+          border-radius: 10px;
+          border: none;
+        }
+        &--btn {
+          height: 40px;
+          width: 50px;
+          border-radius: 10px;
+          border: none;
+          background-color: #eebd53;
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
   .movie_slide {
     height: 340px;
     padding: 20px 150px 0;
