@@ -41,49 +41,69 @@
       font-size: 20px;
       font-weight: bold;
       color: #ffffff;
-      &__movie {
-        list-style: none;
-        margin-left: 20px;
-      }
       &__tv {
-        list-style: none;
         margin-left: 20px;
       }
       &__schedule {
-        list-style: none;
         margin-left: 20px;
       }
       &__sign_up {
-        list-style: none;
         margin-left: 20px;
       }
       &__sign_up:hover {
         text-decoration: none;
       }
       &__login {
-        list-style: none;
         margin-left: 20px;
       }
       &__login:hover {
         text-decoration: none;
       }
       &__search {
-        list-style: none;
         margin-left: 20px;
       }
       // ログイン中 + α
       &__new {
-        list-style: none;
         margin-left: 20px;
       }
       &__my_page {
-        list-style: none;
         margin-left: 20px;
       }
       &__logout {
-        list-style: none;
         margin-left: 20px;
       }
+    }
+  }
+}
+
+//プルダウンメニュー
+.shares_header__box__menu__movie {
+  position: relative;
+}
+
+.pulldown_title {
+  cursor: pointer;
+}
+
+.pulldown {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 70px;
+  transform: translate(-35%);
+  background-color: rgba($color: #ffffffc7, $alpha: 0.5);
+  border-radius: 5px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    &__item {
+      list-style: none;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #000000;
     }
   }
 }
