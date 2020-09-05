@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-  function pulldown() {
-    let menu = document.getElementsByClassName('shares_header__box__menu__movie');
-
-  }
-
-  document.getElementsByClassName('shares_header__box__menu__movie')
+$(function() {
+  $('.shares_header__box__menu__movie, .shares_header__box__menu__tv').hover(
+    function() {
+      $('.pulldown:not(:animated)', this).slideDown();
+    },
+    function() {
+      $('.pulldown', this).slideUp();
+    }
+  );
 });
-
