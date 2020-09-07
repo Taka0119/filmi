@@ -1,24 +1,113 @@
-.shares_header {
-  height: 70px;
-  line-height: 70px;
-  background-color: #c6a765;
-  &__box {
-    margin: 0 20px;
-  }
-}
-
 .header_logo_icon {
   height: 40px;
 }
 
 .root_path {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lobster', cursive;
   text-decoration: none;
   color: #ffffff;
 }
 .root_path:hover {
   text-decoration: none;
   color: #ffffff70;
+}
+
+.link {
+  color: #ffffff;
+}
+
+.link:hover {
+  color: #ffffffc7;
+  text-decoration: none;
+}
+
+.shares_header {
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  background-color: rgba($color: #c6a765, $alpha: 0.7);
+  position: fixed;
+  &__box {
+    margin: 0 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      &__tv {
+        margin-left: 30px;
+      }
+      &__sign_up {
+        margin-left: 40px;
+      }
+      &__sign_up:hover {
+        text-decoration: none;
+      }
+      &__login {
+        margin-left: 20px;
+      }
+      &__login:hover {
+        text-decoration: none;
+      }
+      &__search {
+        margin-left: 20px;
+      }
+      // ログイン中 + α
+      &__new {
+        margin-left: 30px;
+      }
+      &__my_page {
+        margin-left: 30px;
+      }
+      &__logout {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+//プルダウンメニュー
+.shares_header__box__menu__movie .shares_header__box__menu__tv {
+  position: relative;
+}
+
+.pulldown_title {
+  cursor: pointer;
+}
+.pulldown_title:hover {
+  color: #ffffffc7;
+}
+
+.pulldown {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 70px;
+  transform: translate(-40%);
+  background-color: rgba($color: #ffffffc7, $alpha: 0.5);
+  border-radius: 5px;
+  &__list {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    &__item {
+      list-style: none;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      color: #000000;
+    }
+  }
+}
+
+.pulldown_tv {
+  transform: translate(-18%);
 }

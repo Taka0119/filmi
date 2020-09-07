@@ -4,8 +4,16 @@
       = image_tag "filmi_素材/header_logo_icon.png", alt: 'ロゴ画像', class: 'header_logo_icon'
       Filmi
 
-      = link_to new_user_registration_path do
-        会員登録
-
-      = link_to user_session_path do
-        ログイン
+    .shares_header__box__menu
+      .shares_header__box__menu__movie#menu_movie
+        映画
+      .shares_header__box__menu__tv#menu_tv
+        テレビ番組
+      .shares_header__box__menu__sign_up
+        = link_to new_user_registration_path, class: 'link' do
+          新規登録
+      .shares_header__box__menu__login
+        = link_to user_session_path, class: 'link' do
+          ログイン
+      .shares_header__box__menu__search
+        = icon('fa', 'search')

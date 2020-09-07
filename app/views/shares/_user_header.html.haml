@@ -4,6 +4,18 @@
       = image_tag "filmi_素材/header_logo_icon.png", alt: 'ロゴ画像', class: 'header_logo_icon'
       Filmi
 
+    .shares_header__box__menu
+      .shares_header__box__menu__movie
+        %text.pulldown_title 映画
+        .pulldown
+          %ul.pulldown__list
+            %li.pulldown__list__item
+              人気映画
+            %li.pulldown__list__item
+              公開中の映画
+            %li.pulldown__list__item
+              公開予定作品
+
       .shares_header__box__menu__tv
         %text.pulldown_title テレビ番組
         .pulldown.pulldown_tv
@@ -12,6 +24,7 @@
               人気番組
             %li.pulldown__list__item
               放送中の番組
+
 
       .shares_header__box__menu__new
         = icon('fa', 'plus', class: 'shares_header__box__menu__new__list')
