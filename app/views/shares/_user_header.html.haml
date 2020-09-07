@@ -4,6 +4,25 @@
       = image_tag "filmi_素材/header_logo_icon.png", alt: 'ロゴ画像', class: 'header_logo_icon'
       Filmi
 
-      = link_to destroy_user_session_path do
-        ログアウト
+      .shares_header__box__menu__tv
+        %text.pulldown_title テレビ番組
+        .pulldown.pulldown_tv
+          %ul.pulldown__list
+            %li.pulldown__list__item
+              人気番組
+            %li.pulldown__list__item
+              放送中の番組
 
+      .shares_header__box__menu__new
+        = icon('fa', 'plus', class: 'shares_header__box__menu__new__list')
+
+      .shares_header__box__menu__my_page
+        = link_to user_path(current_user) do
+          = icon('fa', 'user-circle', class: 'shares_header__box__menu__my_page__list')
+
+      .shares_header__box__menu__logout
+        = link_to destroy_user_session_path, method: :delete, class: 'link' do
+          ログアウト
+
+      .shares_header__box__menu__search
+        = icon('fa', 'search')
