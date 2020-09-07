@@ -25,14 +25,16 @@
             %li.pulldown__list__item
               放送中の番組
 
+
       .shares_header__box__menu__new
         = icon('fa', 'plus', class: 'shares_header__box__menu__new__list')
 
       .shares_header__box__menu__my_page
-        = icon('fa', 'user-circle', class: 'shares_header__box__menu__my_page__list')
+        = link_to user_path(current_user) do
+          = icon('fa', 'user-circle', class: 'shares_header__box__menu__my_page__list')
 
       .shares_header__box__menu__logout
-        = link_to destroy_user_session_path, class: 'link' do
+        = link_to destroy_user_session_path, method: :delete, class: 'link' do
           ログアウト
 
       .shares_header__box__menu__search
