@@ -5,10 +5,26 @@
       Filmi
 
     .shares_header__box__menu
-      .shares_header__box__menu__movie#menu_movie
-        映画
-      .shares_header__box__menu__tv#menu_tv
-        テレビ番組
+      .shares_header__box__menu__movie
+        %text.pulldown_title 映画
+        .pulldown
+          %ul.pulldown__list
+            %li.pulldown__list__item
+              人気映画
+            %li.pulldown__list__item
+              公開中の映画
+            %li.pulldown__list__item
+              公開予定作品
+
+      .shares_header__box__menu__tv
+        %text.pulldown_title テレビ番組
+        .pulldown.pulldown_tv
+          %ul.pulldown__list
+            %li.pulldown__list__item
+              人気番組
+            %li.pulldown__list__item
+              放送中の番組
+
       .shares_header__box__menu__sign_up
         = link_to new_user_registration_path, class: 'link' do
           新規登録
