@@ -17,9 +17,12 @@
         display: block;
         text-align: center;
         padding: 0;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 10px;
+        margin: 0 10px 0 0;
         &__user {
           height: 200px;
-          background-color: orange;
+
           &--icon {
             height: 120px;
             border-radius: 100px;
@@ -30,9 +33,7 @@
         &__item {
           height: 50px;
           line-height: 50px;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          background-color: paleturquoise;
+          margin-top: 15px;
           &--link {
             color: #000000;
           }
@@ -41,13 +42,17 @@
             text-decoration: none;
           }
         }
+        &__item:hover {
+          background-color: #ffffffc7;
+        }
       }
       &__right {
         width: 700px;
         &--title {
           margin: 0 auto;
           text-align: center;
-          border-bottom: solid 1px rgba(0,0,0,.125);
+          border-bottom: 1px solid rgba(0,0,0,.125);
+          background-color: #e6e6e6c7;
         }
       }
     }

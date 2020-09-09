@@ -15,4 +15,8 @@
 
       = f.submit '更新', class: 'user_edit__wrapper__form--btn'
 
+      .user_edit__wrapper__form__delete
+        = link_to user_path(current_user), method: :delete, class: 'user_edit__wrapper__form__delete--btn' do
+          アカウント削除
+
 = render 'shares/footer'

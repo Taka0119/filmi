@@ -14,7 +14,7 @@
             = icon('fa', 'user')
             プロフィール
         %li.my_page_wrapper__box__inner__left__item
-          = link_to '#', class: 'my_page_wrapper__box__inner__left__item--link' do
+          = link_to edit_user_path, class: 'my_page_wrapper__box__inner__left__item--link' do
             = icon('fa', 'cog')
             アカウント設定
         %li.my_page_wrapper__box__inner__left__item
@@ -27,4 +27,3 @@
           プロフィール
         
         .my_page_wrapper__box__inner__right__content
-          

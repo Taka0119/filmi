@@ -33,6 +33,27 @@
         background-color: #eebd53c7;
         color: #ffffffc7;
       }
+      &__delete {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        &--btn {
+          height: 30px;
+          width: 120px;
+          text-align: center;
+          line-height: 30px;
+          background-color: red;
+          border-radius: 10px;
+          font-size: 15px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+        &--btn:hover {
+          color: #ffffffc7;
+          background-color: rgba(255, 0, 0, 0.8);
+          text-decoration: none;
+        }
+      }
     }
   }
 }
