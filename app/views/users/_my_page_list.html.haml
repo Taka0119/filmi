@@ -1,0 +1,20 @@
+%ul.my_page_wrapper__box__inner__left
+  %li.my_page_wrapper__box__inner__left__user
+    = image_tag 'filmi_素材/Google_icon.png', class: 'my_page_wrapper__box__inner__left__user--icon'
+    .my_page_wrapper__box__inner__left__user--name
+      = @user.name
+    .my_page_wrapper__box__inner__left__user--email
+      = @user.email
+          
+  %li.my_page_wrapper__box__inner__left__item
+    = link_to user_path, class: 'my_page_wrapper__box__inner__left__item--link' do
+      = icon('fa', 'user')
+      プロフィール
+  %li.my_page_wrapper__box__inner__left__item
+    = link_to edit_user_path, class: 'my_page_wrapper__box__inner__left__item--link' do
+      = icon('fa', 'cog')
+      アカウント設定
+  %li.my_page_wrapper__box__inner__left__item
+    = link_to '#', class: 'my_page_wrapper__box__inner__left__item--link' do
+      = icon('fa', 'pen')
+      レビュー・考察

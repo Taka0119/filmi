@@ -2,21 +2,25 @@
 
 .user_edit
   .user_edit__wrapper
-    .user_edit__wrapper--title
-      アカウント設定
-    = form_with model: @user, class: 'user_edit__wrapper__form' do |f|
-      .user_edit__wrapper__form__name.user_edit__wrapper__form__item
-        ユーザー名
-        = @user.name
-        = f.text_field :name
-      .user_edit__wrapper__form__email.user_edit__wrapper__form__item
-        = @user.email
-        = f.text_field :email
+    .user_edit__wrapper__inner
 
-      = f.submit '更新', class: 'user_edit__wrapper__form--btn'
+      = render 'my_page_list'
 
-      .user_edit__wrapper__form__delete
-        = link_to user_path(current_user), method: :delete, class: 'user_edit__wrapper__form__delete--btn' do
-          アカウント削除
+      .user_edit__wrapper__inner__right
+        %h1.user_edit__wrapper__inner__right--title
+          アカウント設定 
+        = form_with model: @user, class: 'user_edit__wrapper__inner__right__form' do |f|
+          .user_edit__wrapper__inner__right__form__name.user_edit__wrapper__inner__right__form__item
+            = f.label 'ユーザー名', class: 'user_edit__wrapper__inner__right__form__name--title'
+            = f.text_field :name, class: 'user_edit__wrapper__inner__right__form__name__field'
+          .user_edit__wrapper__inner__right__form__email.user_edit__wrapper__inner__right__form__item
+            = f.label 'メールアドレス', class: 'user_edit__wrapper__inner__right__form__email--title'
+            = f.text_field :email, class: 'user_edit__wrapper__inner__right__form__email__field'
+
+          = f.submit '更新', class: 'user_edit__wrapper__inner__right__form--btn'
+
+          .user_edit__wrapper__inner__right__form__delete
+            = link_to user_path(current_user), method: :delete, class: 'user_edit__wrapper__inner__right__form__delete--btn' do
+              アカウント削除
 
 = render 'shares/footer'

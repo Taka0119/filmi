@@ -1,57 +1,51 @@
 .user_edit {
-  height: 100vh;
-  padding-top: 70px;
-  background-color: whitesmoke;
+  background-color: #ffffffc7;
+  height: 95vh;
   &__wrapper {
-    padding: 30px 100px;
-    &--title {
-      font-size: 30px;
-      font-weight: bold;
-      text-align: center;
-    }
-    &__form {
-      margin-top: 30px;
-      &__item {
-        padding: 10px 0;
-        border-bottom: 1px solid #ffffff;
-        text-align: center;
-      }
-      &--btn {
-        height: 40px;
-        width: 80px;
-        background-color: #eebd53;
-        border: none;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        color: #ffffff;
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px;
-      }
-      &--btn:hover {
-        background-color: #eebd53c7;
-        color: #ffffffc7;
-      }
-      &__delete {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        &--btn {
-          height: 30px;
-          width: 120px;
+    height: 100%;
+    padding-top: 100px;
+    background-color: whitesmoke;
+    &__inner {
+      width: 1024px;
+      margin: 0 auto;
+      padding: 0 50px 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      &__right {
+        width: 700px;
+        &--title {
+          margin: 0 auto;
           text-align: center;
-          line-height: 30px;
-          background-color: red;
-          border-radius: 10px;
-          font-size: 15px;
-          font-weight: bold;
-          color: #ffffff;
+          border-bottom: 1px solid rgba(0,0,0,.125);
+          background-color: #e6e6e6c7;
         }
-        &--btn:hover {
-          color: #ffffffc7;
-          background-color: rgba(255, 0, 0, 0.8);
-          text-decoration: none;
+        &__form{
+          &__item {
+            display: flex;
+            justify-content: space-between;
+          }
+          &__name {
+            &--title {
+              font-size: 15px;
+              font-weight: bold;
+            }
+            &__field {
+              width: 300px;
+              text-align: center;
+              margin-right: 30px;
+            }
+          }
+          &__email {
+            &--title {
+              font-size: 15px;
+              font-weight: bold;
+            }
+            &__field {
+              width: 300px;
+              text-align: center;
+              margin-right: 30px;
+            }
+          }
         }
       }
     }
